@@ -25,7 +25,7 @@ inline std::ostream& operator<<(std::ostream& os, const datatype::ReflectorFrame
   os << std::setprecision(std::numeric_limits<double>::max_digits10) << std::fixed;
   os << data.time << " " << data.reflector.size() << " ";
   for (const auto& this_reflector : data.reflector) {
-    os << this_reflector.index << " " << this_reflector.x << " " << this_reflector.y << " ";
+    os << this_reflector.index << " " << this_reflector.x << " " << this_reflector.y;
   }
   return os;
 }
@@ -42,7 +42,7 @@ inline std::istream& operator>>(std::istream& is, datatype::ReflectorFrame& data
 }
 
 inline std::ostream& operator<<(std::ostream& os, const datatype::Reflector& data) {
-  os << data.index << " " << data.x << " " << data.y << " ";
+  os << data.index << " " << data.x << " " << data.y;
   return os;
 }
 

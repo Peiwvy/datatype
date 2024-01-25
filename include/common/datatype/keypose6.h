@@ -24,7 +24,7 @@ struct KeyPose6 {
 inline std::ostream& operator<<(std::ostream& os, const datatype::KeyPose6& data) {
   os << std::setprecision(4) << std::fixed;
   os << data.time << " " << data.trans.x() << " " << data.trans.y() << " " << data.trans.z() << " ";
-  os << data.rot.x() << " " << data.rot.y() << " " << data.rot.z() << " ";
+  os << data.rot.x() << " " << data.rot.y() << " " << data.rot.z();
   return os;
 }
 

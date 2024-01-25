@@ -25,7 +25,7 @@ inline std::ostream& operator<<(std::ostream& os, const datatype::GNSS& data) {
   os << std::setprecision(std::numeric_limits<double>::max_digits10) << std::fixed;
   os << data.time << " " << data.longitude << " " << data.latitude << " " << data.altitude << " ";
   os << data.status << " " << data.service << " ";
-  os << data.local_E << " " << data.local_N << " " << data.local_U << " ";
+  os << data.local_E << " " << data.local_N << " " << data.local_U;
   return os;
 }
 

@@ -20,7 +20,7 @@ struct KeyPose : Pose {
 inline std::ostream& operator<<(std::ostream& os, const datatype::KeyPose& data) {
   os << std::setprecision(std::numeric_limits<double>::max_digits10) << std::fixed;
   os << data.time << " " << data.index << " ";
-  os << static_cast<const datatype::Pose&>(data) << " ";
+  os << static_cast<const datatype::Pose&>(data);
 
   return os;
 }

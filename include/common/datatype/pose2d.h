@@ -13,7 +13,7 @@ struct Pose2D {
 
 inline std::ostream& operator<<(std::ostream& os, const datatype::Pose2D& data) {
   os << std::setprecision(std::numeric_limits<double>::max_digits10) << std::fixed;
-  os << data.x << " " << data.y << " " << data.theta << " ";
+  os << data.x << " " << data.y << " " << data.theta;
   return os;
 }
 
