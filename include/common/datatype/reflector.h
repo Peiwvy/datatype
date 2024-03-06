@@ -23,9 +23,9 @@ struct ReflectorFrame {  // 用于存储关键帧检测的反光板信息
 
 inline std::ostream& operator<<(std::ostream& os, const datatype::ReflectorFrame& data) {
   os << std::setprecision(std::numeric_limits<double>::max_digits10) << std::fixed;
-  os << data.time << " " << data.reflector.size() << " ";
+  os << data.time << " " << data.reflector.size();
   for (const auto& this_reflector : data.reflector) {
-    os << this_reflector.index << " " << this_reflector.x << " " << this_reflector.y;
+    os << " " << this_reflector.index << " " << this_reflector.x << " " << this_reflector.y;
   }
   return os;
 }
